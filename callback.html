@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TacticalPawns – Connect</title><style>body{font-family:system-ui,sans-serif;background:#070b1f;color:#e8f4ff;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6}h1{color:#19e6ff}a{color:#19e6ff}</style></head><body>
+<h1>TacticalPawns – TikTok connection</h1>
+<p id="m">Waiting for authorization…</p>
+<script>
+var p=new URLSearchParams(location.search),c=p.get('code'),e=p.get('error');
+document.getElementById('m').innerHTML=c?'Authorization successful. Copy this code and send it to the assistant:<br><br><code style="word-break:break-all;color:#19e6ff">'+c.replace(/</g,'')+'</code>':(e?'Authorization failed: '+e.replace(/</g,''):'No authorization code in this URL. Use the connect link to start.');
+</script>
+<p><a href="index.html">Home</a></p>
+</body></html>
